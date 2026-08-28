@@ -13,6 +13,7 @@ body {
     background: #f8fafc;
     color: #1f2937;
     line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a {
@@ -26,13 +27,17 @@ img {
 }
 
 
-/* Navbar */
+/* =========================
+   Navbar
+========================= */
 
 header {
     position: sticky;
     top: 0;
+    z-index: 1000;
     background: white;
     border-bottom: 1px solid #e5e7eb;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 nav {
@@ -54,10 +59,12 @@ nav {
 .nav-links {
     display: flex;
     gap: 25px;
+    align-items: center;
 }
 
 .nav-links a {
     font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -65,10 +72,34 @@ nav {
 }
 
 
-/* Sections */
+/* =========================
+   Theme Toggle Button
+========================= */
+
+#theme-toggle {
+    padding: 8px 14px;
+    border: 1px solid #2563eb;
+    border-radius: 7px;
+    background: transparent;
+    color: #2563eb;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background: #2563eb;
+    color: white;
+}
+
+
+/* =========================
+   Sections
+========================= */
 
 section {
     padding: 80px 8%;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .section-heading {
@@ -87,7 +118,9 @@ section {
 }
 
 
-/* Hero */
+/* =========================
+   Hero Section
+========================= */
 
 #home {
     max-width: 1100px;
@@ -149,7 +182,9 @@ section {
 }
 
 
-/* Hero Image */
+/* =========================
+   Hero Image
+========================= */
 
 .hero-image img {
     width: 320px;
@@ -158,10 +193,14 @@ section {
     border-radius: 50%;
     border: 7px solid white;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 
-/* About */
+/* =========================
+   About / Education / Contact
+========================= */
 
 #about,
 #education,
@@ -201,7 +240,9 @@ section {
 }
 
 
-/* Skills */
+/* =========================
+   Skills
+========================= */
 
 .skills-container {
     max-width: 1050px;
@@ -220,7 +261,11 @@ section {
     border: 1px solid #e5e7eb;
     border-radius: 12px;
 
-    transition: 0.3s;
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .skill-card:hover {
@@ -240,13 +285,17 @@ section {
 }
 
 
-/* Education */
+/* =========================
+   Education
+========================= */
 
 .education-card {
     padding: 30px;
     background: #f8fafc;
     border-left: 4px solid #2563eb;
     border-radius: 8px;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .education-card h3 {
@@ -259,7 +308,9 @@ section {
 }
 
 
-/* Projects */
+/* =========================
+   Projects
+========================= */
 
 .projects-container {
     max-width: 1050px;
@@ -275,6 +326,17 @@ section {
     border: 1px solid #e5e7eb;
     border-radius: 12px;
     overflow: hidden;
+
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .project-image img {
@@ -310,7 +372,9 @@ section {
 }
 
 
-/* Contact */
+/* =========================
+   Contact
+========================= */
 
 .contact-info {
     display: grid;
@@ -323,6 +387,8 @@ section {
     background: #f8fafc;
     border: 1px solid #e5e7eb;
     border-radius: 8px;
+
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .contact-item h3 {
@@ -335,7 +401,9 @@ section {
 }
 
 
-/* Contact Form */
+/* =========================
+   Contact Form
+========================= */
 
 .contact-form {
     max-width: 700px;
@@ -360,6 +428,13 @@ section {
     border: 1px solid #d1d5db;
     border-radius: 7px;
     outline: none;
+
+    font-family: inherit;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
 }
 
 .form-group input:focus,
@@ -379,7 +454,9 @@ section {
 }
 
 
-/* Footer */
+/* =========================
+   Footer
+========================= */
 
 footer {
     padding: 25px;
@@ -389,7 +466,176 @@ footer {
 }
 
 
-/* Responsive */
+/* =================================================
+   DARK MODE
+================================================= */
+
+body.dark-mode {
+    background: #111827;
+    color: #f9fafb;
+}
+
+
+/* Navbar */
+
+body.dark-mode header {
+    background: #1f2937;
+    border-bottom-color: #374151;
+}
+
+body.dark-mode .nav-links a {
+    color: #f9fafb;
+}
+
+body.dark-mode .nav-links a:hover {
+    color: #60a5fa;
+}
+
+
+/* Theme Button */
+
+body.dark-mode #theme-toggle {
+    border-color: #60a5fa;
+    color: #60a5fa;
+}
+
+body.dark-mode #theme-toggle:hover {
+    background: #2563eb;
+    color: white;
+}
+
+
+/* Sections */
+
+body.dark-mode #about,
+body.dark-mode #education,
+body.dark-mode #contact {
+    background: #1f2937;
+}
+
+
+/* Section Headings */
+
+body.dark-mode .section-heading h2 {
+    color: #f9fafb;
+}
+
+
+/* Hero */
+
+body.dark-mode .hero-content h1 {
+    color: #f9fafb;
+}
+
+body.dark-mode .hero-description {
+    color: #d1d5db;
+}
+
+body.dark-mode .hero-image img {
+    border-color: #374151;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .hero-buttons a:last-child {
+    color: #60a5fa;
+}
+
+
+/* About */
+
+body.dark-mode .about-text p {
+    color: #d1d5db;
+}
+
+
+/* Skills */
+
+body.dark-mode .skill-card {
+    background: #1f2937;
+    border-color: #374151;
+}
+
+body.dark-mode .skill-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Education */
+
+body.dark-mode .education-card {
+    background: #111827;
+}
+
+body.dark-mode .education-card h3 {
+    color: #f9fafb;
+}
+
+
+/* Projects */
+
+body.dark-mode .project-card {
+    background: #1f2937;
+    border-color: #374151;
+}
+
+body.dark-mode .project-content p {
+    color: #d1d5db;
+}
+
+body.dark-mode .project-tech span {
+    background: #1e3a8a;
+    color: #bfdbfe;
+}
+
+
+/* Contact */
+
+body.dark-mode .contact-item {
+    background: #111827;
+    border-color: #374151;
+}
+
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea {
+    background: #111827;
+    color: #f9fafb;
+    border-color: #4b5563;
+}
+
+body.dark-mode .contact-form input::placeholder,
+body.dark-mode .contact-form textarea::placeholder {
+    color: #9ca3af;
+}
+
+
+/* Footer */
+
+body.dark-mode footer {
+    background: #030712;
+}
+
+
+/* =========================
+   Mobile Menu Button
+========================= */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: #1f2937;
+}
+
+body.dark-mode .menu-toggle {
+    color: #f9fafb;
+}
+
+
+/* =========================
+   Responsive - 800px
+========================= */
 
 @media (max-width: 800px) {
 
@@ -417,6 +663,35 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+
+/* =========================
+   Responsive - 650px
+========================= */
+
+@media (max-width: 650px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+
+/* =========================
+   Responsive - 550px
+========================= */
 
 @media (max-width: 550px) {
 
@@ -451,62 +726,5 @@ footer {
     .contact-image img {
         width: 100%;
         height: 250px;
-    }
-}
-.dark-mode {
-    background: #111827;
-    color: #f9fafb;
-}
-
-.dark-mode header,
-.dark-mode #about,
-.dark-mode #education,
-.dark-mode #contact {
-    background: #1f2937;
-}
-
-.dark-mode h1,
-.dark-mode h2,
-.dark-mode h3,
-.dark-mode h4 {
-    color: #f9fafb;
-}
-
-.dark-mode p {
-    color: #d1d5db;
-}
-
-.dark-mode .skill-card,
-.dark-mode .project-card,
-.dark-mode .contact-item,
-.dark-mode .education-card,
-.dark-mode .contact-form {
-    background: #1f2937;
-    border-color: #374151;
-}
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 25px;
-    cursor: pointer;
-}
-
-@media (max-width: 650px) {
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        gap: 15px;
-        padding: 15px 0;
-    }
-
-    .nav-links.active {
-        display: flex;
     }
 }
