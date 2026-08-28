@@ -1,16 +1,16 @@
 # Jannat — Personal Portfolio
 
-A responsive personal portfolio website built with **HTML5, CSS3, and JavaScript** to showcase my academic background, skills, projects, learning journey, and contact information.
+A responsive personal portfolio website built with **HTML5, CSS3, and JavaScript** to showcase my academic background, technical skills, projects, current learning journey, and contact information.
 
 The portfolio features a clean, modern, and responsive interface designed to provide a smooth experience across desktop, tablet, and mobile devices.
 
 ## About The Project
 
-This is my personal portfolio website, created to introduce myself as a **Statistics Student and Aspiring Web Developer**.
+This is my personal portfolio website, created to introduce myself as a **Statistics Student and Aspiring Full-Stack Web Developer**.
 
-The project represents my journey into web development and my effort to build a strong foundation in frontend technologies. It focuses on semantic HTML, responsive CSS layouts, JavaScript-based interactivity, and practical implementation of the concepts I am learning.
+The project represents my journey into web development and my effort to build a strong foundation in modern web technologies. It focuses on semantic HTML, responsive CSS layouts, JavaScript-based interactivity, and practical implementation of the concepts I am learning.
 
-Additional project information and technology details are documented separately in `about.md` and `tecnologies.md`.
+I am also interested in **Data Analysis** and want to connect my Statistics background with programming and web development to build practical, data-driven solutions.
 
 AI-assisted development tools, including **ChatGPT and Codex**, were also used as learning and coding assistants during the development process.
 
@@ -21,15 +21,16 @@ AI-assisted development tools, including **ChatGPT and Codex**, were also used a
 * Responsive mobile navigation menu
 * Hero section with personal introduction
 * About Me section
-* Skills section
+* Skills & Tools section
 * Education section
+* Currently Learning section
 * Projects section
 * Contact information
 * Contact form UI
-* Smooth scrolling navigation
+* Smooth navigation between sections
 * Hover effects and transitions
 * Dark Mode / Light Mode toggle
-* Clean and semantic HTML structure
+* Semantic HTML structure
 * Mobile-friendly layout
 
 ## Technologies Used
@@ -63,6 +64,23 @@ Used to add interactivity and dynamic functionality, including:
 * DOM manipulation
 * Event handling
 * Interactive UI behavior
+
+### TypeScript
+
+TypeScript is currently being learned and practiced through programming exercises and small projects. It is also used in some of my learning projects, such as the Student Result Calculator.
+
+## Skills & Tools
+
+The portfolio currently highlights the following skills and tools:
+
+* HTML5
+* CSS3
+* JavaScript
+* TypeScript
+* Git
+* GitHub
+* Visual Studio Code
+* AI-Assisted Development Tools
 
 ## Development Tools
 
@@ -107,17 +125,19 @@ AI tools were used as learning and development assistants. The code was reviewed
 
 ## Current Technology Stack
 
-| Category          | Technology / Tool  |
-| ----------------- | ------------------ |
-| Structure         | HTML5              |
-| Styling           | CSS3               |
-| Functionality     | JavaScript         |
-| Code Editor       | Visual Studio Code |
-| Local Development | Live Server        |
-| Browser           | Google Chrome      |
-| Version Control   | Git                |
-| Code Hosting      | GitHub             |
-| AI Assistance     | ChatGPT + Codex    |
+| Category           | Technology / Tool  |
+| ------------------ | ------------------ |
+| Structure          | HTML5              |
+| Styling            | CSS3               |
+| Functionality      | JavaScript         |
+| Typed Programming  | TypeScript         |
+| Code Editor        | Visual Studio Code |
+| Local Development  | Live Server        |
+| Browser            | Google Chrome      |
+| Version Control    | Git                |
+| Code Hosting       | GitHub             |
+| AI Assistance      | ChatGPT + Codex    |
+| Currently Learning | React              |
 
 ## Project Structure
 
@@ -130,8 +150,20 @@ Portfolio/
 ├── about.md
 ├── tecnologies.md
 │
-└── image/
-    └── ...
+└── Image/
+    ├── 1786173286341~2.jpg
+    ├── html-5.png
+    ├── css.png
+    ├── java.png
+    ├── typescript.png
+    ├── git.png
+    ├── github.png
+    ├── code.png
+    ├── artificial-intelligence.png
+    ├── communication.png
+    ├── phone.png
+    ├── whatsapp.png
+    └── linkedin.png
 ```
 
 ### File Description
@@ -141,21 +173,23 @@ Portfolio/
 * `script.js` — Handles interactive functionality such as Dark Mode / Light Mode and the mobile navigation menu.
 * `about.md` — Contains additional information about the project and the author.
 * `tecnologies.md` — Contains detailed information about the technologies, development tools, and AI-assisted resources used in the project.
-* `image/` — Contains the images used throughout the portfolio.
+* `Image/` — Contains the images and icons used throughout the portfolio.
 
 ## Website Sections
 
 ### Home
 
-Introduces me as a **Statistics Student and Aspiring Web Developer** with a brief overview of my interests and goals.
+Introduces me as a **Statistics Student and Aspiring Full-Stack Web Developer** with a brief overview of my interests and goals.
 
 ### About Me
 
-Provides information about my academic background, interests, and journey into web development.
+Provides information about my academic background, web development journey, interests, and long-term goals.
 
-### Skills
+I started learning web development through **Programming Hero on July 1, 2026**.
 
-The portfolio highlights the technologies and skills I am currently learning and practicing:
+### Skills & Tools
+
+The portfolio highlights the technologies and tools I am currently learning and practicing:
 
 * HTML5
 * CSS3
@@ -163,40 +197,59 @@ The portfolio highlights the technologies and skills I am currently learning and
 * TypeScript
 * Git
 * GitHub
-* Responsive Design
+* Visual Studio Code
+* AI-Assisted Development Tools
 
 ### Education
 
-**Bachelor of Science in Statistics**
+**B.Sc. (Honours) in Statistics**
 
 Government Azizul Haque College
 Affiliated with National University, Bangladesh
 
+**2023 – 2028**
+
+### Currently Learning
+
+The portfolio includes the areas I am currently focusing on:
+
+* **React** — Learning component-based and interactive web development.
+* **Full-Stack Development** — Gradually expanding my knowledge toward frontend, backend, and full-stack development.
+* **Data Analysis** — Exploring how Statistics, programming, and data-driven problem solving can be combined.
+
 ### Projects
 
-The Projects section showcases projects created while learning and practicing web development.
+The Projects section currently includes:
 
-More projects will be added as I continue improving my skills and exploring new technologies.
+1. **Personal Portfolio**
+2. **Restaurant Landing Page**
+3. **Payment App Interface**
+4. **Expense Tracker**
+5. **To-Do List App**
+6. **Student Result Calculator**
+
+These projects are part of my learning journey and help me practice HTML, CSS, JavaScript, TypeScript, responsive design, DOM manipulation, programming logic, and basic data management.
+
+More projects will be added as I continue improving my skills.
 
 ### Contact
 
 You can reach me through:
 
 * **Email:** [jannatjr648@gmail.com](mailto:jannatjr648@gmail.com)
+* **Phone:** +880 1516537025
+* **WhatsApp:** +880 1516537025
 * **GitHub:** https://github.com/jannat056
-* **WhatsApp:** +880 15********
+* **LinkedIn:** https://linkedin.com/in/jannat507
 
 ## Live Demo
 
-**Coming Soon**
-
-The portfolio will be deployed online soon.
+**[Visit My Portfolio](https://jannat056.github.io/Portfolio/)**
 
 ## Future Improvements
 
 As I continue learning and developing my skills, I plan to improve the portfolio by adding:
 
-* TypeScript integration
 * More advanced JavaScript functionality
 * Improved animations and interactions
 * Project filtering and categorization
@@ -208,22 +261,33 @@ As I continue learning and developing my skills, I plan to improve the portfolio
 * API integration
 * React-based development
 * Backend and database integration
+* Data-driven features and projects
 
 ## Learning Goals
 
-My current goal is to build a strong foundation in **frontend web development** through consistent practice and real-world projects.
+My goal is to build a strong foundation in **Full-Stack Web Development** while continuing to develop my knowledge of **Statistics and Data Analysis**.
 
-My learning path is gradually expanding from:
+My current learning path is gradually expanding through:
 
 **HTML → CSS → JavaScript → TypeScript → React → Backend Development**
 
-Through this portfolio and future projects, I aim to improve my problem-solving skills, coding practices, and understanding of modern web development.
+Alongside web development, I want to explore how Statistics and programming can work together in practical **Data Analysis** and data-driven applications.
+
+Through this portfolio and future projects, I aim to improve my:
+
+* Problem-solving skills
+* Programming fundamentals
+* Frontend development skills
+* Backend development skills
+* Data analysis skills
+* Code quality and organization
+* Understanding of modern web technologies
 
 ## Author
 
 **Jannat**
 
-Statistics Student | Aspiring Web Developer
+Statistics Student | Aspiring Full-Stack Web Developer
 
 GitHub: https://github.com/jannat056
 
@@ -232,3 +296,5 @@ GitHub: https://github.com/jannat056
 This project was created for **learning and personal portfolio purposes**.
 
 Feel free to explore the project and use it as inspiration for your own learning journey.
+
+© 2026 Jannat. All Rights Reserved.
